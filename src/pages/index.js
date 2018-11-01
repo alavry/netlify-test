@@ -1,14 +1,8 @@
 import React from 'react'
-import * as Scroll from 'react-scroll';
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import video from '../vid/Hello-World.webm'
-let Element    = Scroll.Element;
-let Events     = Scroll.Events;
-let scroll     = Scroll.animateScroll;
-let scrollSpy  = Scroll.scrollSpy;
-
 export default class IndexPage extends React.Component {
   
   render() {
