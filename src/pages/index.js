@@ -28,7 +28,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div style={{ 'text-align': 'center' }} className="content">
-              <h1 className="has-text-weight-bold is-size-2">Club News</h1>
+              <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>
             </div>
             {posts
               .map(({ node: post }) => (
