@@ -6,8 +6,6 @@ $kaldi-red: #FD461E
 $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
-
-
 #officers 
   padding-bottom: 10px
   margin-top: 50px
@@ -69,7 +67,7 @@ $primary-invert: $kaldi-red-invert
   margin: auto
   margin-top: 0px
   margin-bottom: 1%
-  font-size: 6.5rem
+  font-size: 6.8vw
   font-family: Cabin, medium
 
 .hero-subtitle
@@ -77,9 +75,14 @@ $primary-invert: $kaldi-red-invert
   text-shadow: 0em 0.05em 0em #000
   margin: auto
   margin-top: 0px
-  font-size: 2.25rem
+  @media screen and (max-width: 768px)
+  font-size: 4.5vw
+  font-size: 3vw
   font-family: Cabin, medium
-  width: 75%
+
+@media screen and (max-width: 768px) 
+  .hero-video
+    display: block !important
 
 .officer-role
   margin-bottom: 10px
