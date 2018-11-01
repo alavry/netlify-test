@@ -3,20 +3,51 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import president from '../img/president.jpg'
+import avatar from '../img/avatar.png'
+
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
   return (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
+            <div className="section has-text-centered">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <div id="officers">
+                <div id="officers-list">
+                    <div class="officer">
+                      <img id="avt" alt="Jairo" src={president}></img>
+                        <h1 class="officer-name">Jairo Molina</h1>
+                        <p class="officer-role has-text-weight-semibold">President</p>
+                        <a href="mailto:molinaandres9991@gmail.com" class="button">Contact</a>
+                    </div>
+
+                    <div class="officer">
+                      <img id="avt" alt="Fredi" src={avatar}></img>
+                        <h1 class="officer-name">Fredi </h1>
+                        <p class="officer-role has-text-weight-semibold">Vice-President</p>
+                        <a href="mailto:fredirbase@gmail.com" class="button">Contact</a>
+                    </div>
+
+                    <div class="officer">
+                      <img id="avt" alt="Adrian"  src={avatar}></img>
+                        <h1 class="officer-name">Adrian Koss</h1>
+                        <p class="officer-role has-text-weight-semibold">Secretary</p>
+                        <a href="mailto:adrianpkoss7@gmail.com" class="button">Contact</a>
+                    </div>
+
+                    <div class="officer">
+                      <img id="avt" alt="Sho" src={avatar}></img>
+                        <h1 class="officer-name">Sho Nakajima</h1>
+                        <p class="officer-role has-text-weight-semibold	">Treasurer</p>
+                        <a href="mailto:tojiro1028@live.jp" class="button">Contact</a>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
