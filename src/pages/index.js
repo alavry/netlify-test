@@ -21,13 +21,16 @@ export default class IndexPage extends React.Component {
                   BMCC PROGRAMMING CLUB
                 </div>
                 <div className="hero-subtitle has-text-centered has-text-white">
-                Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
+                  Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
+                </div>
+                <div>
+                <a style={{margin:'auto','margin-bottom':'100%'}} class="is-white is-rounded is-info is-large button" href="https://docs.google.com/forms/d/e/1FAIpQLSfTxxUtXfvM3NwpekhjUl9FA6NNJp7-cmMZQiUCL9wc4TRPjw/viewform?usp=sf_link">Register Now</a>
                 </div>
             </div>
         </section>
         <section className="section">
           <div className="container">
-            <div style={{ 'text-align': 'center' }} className="content">
+            <div className="has-text-centered content">
               <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>
             </div>
             {posts
