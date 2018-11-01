@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 import president from '../img/president.jpg'
 import avatar from '../img/avatar.png'
-
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (

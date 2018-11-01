@@ -4,32 +4,21 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import video from '../vid/Hello-World.webm'
 import poster from '../img/Hello-World.jpg'
-
-import Cover from 'react-video-cover'
 export default class IndexPage extends React.Component {
-  
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const videoOptions = {
-      src: video,
-      autoPlay: true,
-      loop: true,
-      playsinline: true,
-      muted: true,
-      poster: poster
-    };
     return (
       <Layout>
         <section class="hero is-fullheight video">
-          <div class="hero-video" style={{
-            width: '100vw',
-            height: '100vh',
-            top: 0,
-            left: 0,
-            zIndex: -1,
-          }}>
-                <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster="img/bgimg.jpg" id="bgvid" playsinline autoPlay muted loop></video>
+            <div class="hero-video" style={{
+              width: '100vw',
+              height: '100vh',
+              top: 0,
+              left: 0,
+              zIndex: -1,
+            }}>
+              <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster={poster} playsinline autoPlay muted loop></video>
             </div>
             <div style={{'flex-direction': 'column'}} class="hero-body">
                 <div className="hero-title has-text-white"> 
