@@ -29,16 +29,7 @@ export default class IndexPage extends React.Component {
             left: 0,
             zIndex: -1,
           }}>
-                {/* <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster="img/bgimg.jpg" id="bgvid" playsinline autoPlay muted loop></video> */}
-                <Cover
-          videoOptions={videoOptions}
-          remeasureOnWindowResize
-          getResizeNotifier={resizeNotifier => {
-            this.setState({
-              resizeNotifier,
-            });
-          }}
-        />
+                <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster="img/bgimg.jpg" id="bgvid" playsinline autoPlay muted loop></video>
             </div>
             <div style={{'flex-direction': 'column'}} class="hero-body">
                 <div className="hero-title has-text-white"> 
