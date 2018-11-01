@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import video from '../vid/Hello-World.webm'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -10,31 +11,47 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <section class="hero is-fullheight video">
+            <div class="hero-video">
+                <video src={video} poster="img/bgimg.jpg" id="bgvid" playsinline autoPlay muted loop>
+                </video>
+            </div>
+            <div style={{'flex-direction': 'column'}} class="hero-body">
+                <div className="hero-title has-text-white"> 
+                  BMCC PROGRAMMING CLUB
+                </div>
+                <div className="hero-subtitle has-text-centered has-text-white">
+                Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
+                </div>
+            </div>
+        </section>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <div style={{ 'text-align': 'center' }} className="content">
+              <h1 className="has-text-weight-bold is-size-2">Club News</h1>
             </div>
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  className="content has-text-centered"
+                  style={{ border: '1px solid #eaecee', width: '45%', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p>
+                  <p style={{'margin-bottom':'0px'}}>
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
+                  </p>
+                  <p>
                     <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
                     {post.excerpt}
                     <br />
-                    <br />
+                  </p>
+                  <p>
                     <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
+                      Read More
                     </Link>
                   </p>
                 </div>
