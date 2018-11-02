@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import Helmet from 'react-helmet'
 
 export default class EventsPage extends React.Component {
   render() {
@@ -9,6 +10,7 @@ export default class EventsPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
     return (
       <Layout>
+        <Helmet title="Events"/>
         <section className="section">
         <div className="has-text-centered content">
               <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>

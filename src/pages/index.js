@@ -4,12 +4,14 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import video from '../vid/Hello-World.webm'
 import poster from '../img/Hello-World.jpg'
+import Helmet from 'react-helmet'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     return (
       <Layout>
+      <Helmet title="Home"/>
         <section class="hero is-fullheight video">
             <div class="hero-video" style={{
               width: '100vw',

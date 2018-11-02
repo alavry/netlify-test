@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import president from '../img/president.jpg'
 import avatar from '../img/avatar.png'
+import Helmet from 'react-helmet'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
@@ -66,6 +67,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title="About"/>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import logo from '../img/terminal.svg'
+import Helmet from 'react-helmet'
 
 export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -44,8 +45,8 @@ const ContactUsPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title="Contact Us"/>
       <ContactUsPageTemplate
-    
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
