@@ -17,7 +17,7 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
             <div className="contact-border section has-text-right ">
             <div style={{'column-count': '2'}}>
             <div>
-              <img src={logo}></img>
+              <img src={logo} alt="terminal prompt"></img>
             </div>
             <div style={{}} >
               <h2 style={{'font-size': '4vw'}} className="title has-text-weight-bold is-bold-light">
