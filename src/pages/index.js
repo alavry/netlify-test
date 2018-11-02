@@ -38,6 +38,7 @@ export default class IndexPage extends React.Component {
           </div>
           <div className="container">
             {posts
+              .filter((i, index) => (index < 3))
               .map(({ node: post }) => (
                 <div
                   className="content has-text-centered"

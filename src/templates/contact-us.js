@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import logo from '../img/terminal.svg'
 
 export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -12,13 +13,20 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+            <div className="contact-border section has-text-right ">
+            <div style={{'column-count': '2'}}>
+            <div>
+              <img src={logo}></img>
+            </div>
+            <div style={{}} >
+              <h2 style={{'font-size': '4vw'}} className="title has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <PageContent className="content contact-info" content={content} />
             </div>
-          </div>
+            </div>
+              </div>
+           </div>
         </div>
       </div>
     </section>
