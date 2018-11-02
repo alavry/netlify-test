@@ -13,12 +13,12 @@ export default class EventsPage extends React.Component {
         <div className="has-text-centered content">
               <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>
         </div>
-          <div className="container">
+          <div style={{ 'flex-wrap': 'wrap', display: 'flex'}} className="container">
             {posts
                  .map(({ node: post }) => (
                 <div
                   className="content has-text-centered"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  style={{ border: '1px solid #eaecee', flex: '2 2 50%', padding: '2em 4em' }}
                   key={post.id}
                 >
                   <p style={{'margin-bottom':'0px'}}>
