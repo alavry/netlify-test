@@ -1,7 +1,7 @@
 {
   "name": "bmcc-programming-club",
   "description": "BMCC Programming Club Website - forked from gatsby-starter-netlify-cms by Austin Green",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Andrew Lavryshyn",
   "dependencies": {
     "bulma": "^0.7.0",
