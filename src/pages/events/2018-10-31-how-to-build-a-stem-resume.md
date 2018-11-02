@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: event
 title: How to build a STEM resume
 date: 2018-10-31T17:00:00.000Z
 ---

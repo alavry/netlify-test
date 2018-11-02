@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: event
 title: Github + Linux + Atom
 date: 2018-10-17T18:00:00.000Z
 ---

@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPostTemplate = ({
+export const EventTemplate = ({
   content,
   contentComponent,
   title,
@@ -31,38 +31,38 @@ export const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+EventTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const BlogPost = ({ data }) => {
+const Event = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <BlogPostTemplate
+      <EventTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+        helmet={<Helmet title={`${post.frontmatter.title} | Event`} />}
         title={post.frontmatter.title}
       />
     </Layout>
   )
 }
 
-BlogPost.propTypes = {
+Event.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default Event
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query EventByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
