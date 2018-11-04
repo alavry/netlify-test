@@ -20,7 +20,7 @@ export default class EventsPage extends React.Component {
                  .map(({ node: post }) => (
                 <div
                   className="content has-text-centered"
-                  style={{ border: '1px solid #eaecee', flex: '2 2 50%', padding: '2em 4em' }}
+                  style={{ border: '1px solid #eaecee', flex: '0 50%', padding: '2em 4em', marginBottom: '24px' }}
                   key={post.id}
                 >
                   <p style={{marginBottom:'0px'}}>
