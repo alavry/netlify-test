@@ -7,7 +7,7 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <img src={logo} alt="BMCC Programming Club" style={{ width: '100%', 'max-height': '100%', 'padding-top': '7px' }} />
+          <img src={logo} alt="BMCC Programming Club" style={{ width: '100%', maxHeight: '100%', paddingTop: '7px' }} />
         </Link>
       </div>
       <div className="navbar-start">
@@ -22,7 +22,7 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-end">
-        <div class="navbar-item">
+        <div className="navbar-item">
             <strong>Wednesdays - 2:00 pm to 4:00 pm - Fiterman F707</strong>
         </div>
       </div>

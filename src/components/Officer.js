@@ -4,11 +4,11 @@ import './officer.sass'
 
 class Officer extends React.Component {
   render() {
-    return (<div class="officer">
+    return (<div className="officer">
             <img id="avt" alt={this.props.name} src={this.props.img}></img>
-              <h1 class="officer-name">{this.props.name}</h1>
-              <p class="officer-role has-text-weight-semibold">{this.props.role}</p>
-              <a href={`mailto:${this.props.email}`} class="button">Contact</a>
+              <h1 className="officer-name">{this.props.name}</h1>
+              <p className="officer-role has-text-weight-semibold">{this.props.role}</p>
+              <a href={`mailto:${this.props.email}`} className="button">Contact</a>
           </div>)
   }
 }

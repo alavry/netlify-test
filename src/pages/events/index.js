@@ -15,7 +15,7 @@ export default class EventsPage extends React.Component {
         <div className="has-text-centered content">
               <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>
         </div>
-          <div style={{ 'flex-wrap': 'wrap', display: 'flex'}} className="container">
+          <div style={{ flexWrap: 'wrap', display: 'flex'}} className="container">
             {posts
                  .map(({ node: post }) => (
                 <div
@@ -23,7 +23,7 @@ export default class EventsPage extends React.Component {
                   style={{ border: '1px solid #eaecee', flex: '2 2 50%', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p style={{'margin-bottom':'0px'}}>
+                  <p style={{marginBottom:'0px'}}>
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>

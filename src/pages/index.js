@@ -12,17 +12,17 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
       <Helmet title="Home"/>
-        <section class="hero is-fullheight video">
-            <div class="hero-video" style={{
+        <section className="hero is-fullheight video">
+            <div className="hero-video" style={{
               width: '100vw',
               height: '100vh',
               top: 0,
               left: 0,
               zIndex: -1,
             }}>
-              <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster={poster} playsinline autoPlay muted loop></video>
+              <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster={poster} playsInline autoPlay muted loop></video>
             </div>
-            <div style={{'flex-direction': 'column'}} class="hero-body">
+            <div style={{flexDirection: 'column'}} className="hero-body">
                 <div className="hero-title has-text-white"> 
                   BMCC PROGRAMMING CLUB
                 </div>
@@ -30,7 +30,15 @@ export default class IndexPage extends React.Component {
                   Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
                 </div>
                 <div>
-                <a style={{margin:'auto','margin-bottom':'100%'}} class="is-white is-rounded is-info is-large button" href="https://docs.google.com/forms/d/e/1FAIpQLSfTxxUtXfvM3NwpekhjUl9FA6NNJp7-cmMZQiUCL9wc4TRPjw/viewform?usp=sf_link">Register Now</a>
+                  <a 
+                    style={{
+                      margin:'auto', 
+                      marginBottom:'100%'
+                    }} 
+                    className="is-white is-rounded is-info is-large button" 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfTxxUtXfvM3NwpekhjUl9FA6NNJp7-cmMZQiUCL9wc4TRPjw/viewform?usp=sf_link">
+                      Register Now
+                  </a>
                 </div>
             </div>
         </section>
@@ -47,7 +55,7 @@ export default class IndexPage extends React.Component {
                   style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p style={{'margin-bottom':'0px'}}>
+                  <p style={{marginBottom:'0px'}}>
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
