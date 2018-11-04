@@ -1,0 +1,38 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/bmcc-programming-club/events/2018-10-17-github-linux-atom/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/events/2018-10-17-robotics-workshop/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/events/2018-11-02-test/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/events/2018-10-31-how-to-build-a-stem-resume/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/about/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/contact-us/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/404/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/events/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
+/bmcc-programming-club/404.html
+  Link: </bmcc-programming-club/webpack-runtime-46229881056a70648970.js>; rel=preload; as=script
+  Link: </bmcc-programming-club/0-60f1fe0c17be74c2977c.js>; rel=preload; as=script
