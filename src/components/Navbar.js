@@ -22,7 +22,7 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-end">
-        <div className="navbar-item" style={{fontSize: '0.9rem'}}>
+        <div className="navbar-item" style={{fontSize: 'calc(10px + 0.5vmax)'}}>
             <strong>Wednesdays - 2:00 pm to 4:00 pm - Fiterman F707</strong>
         </div>
       </div>
