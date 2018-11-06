@@ -6,8 +6,7 @@ import Helmet from 'react-helmet'
 
 export default class EventsPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: posts } = this.props.data.allMarkdownRemark
     return (
       <Layout>
         <Helmet title="Events"/>
@@ -15,12 +14,11 @@ export default class EventsPage extends React.Component {
         <div className="has-text-centered content">
               <h1 className="has-text-weight-bold is-size-2">Upcoming Events!</h1>
         </div>
-          <div style={{ flexWrap: 'wrap', display: 'flex'}} className="container">
+          <div className="container events-container">
             {posts
                  .map(({ node: post }) => (
                 <div
-                  className="content has-text-centered"
-                  style={{ border: '1px solid #eaecee', flex: '0 50%', padding: '2em 4em', marginBottom: '24px' }}
+                  className="content has-text-centered events-item"
                   key={post.id}
                 >
                   <p style={{marginBottom:'0px'}}>
@@ -65,7 +63,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 800)
           id
           fields {
             slug
