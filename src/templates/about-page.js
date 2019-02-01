@@ -23,9 +23,9 @@ export const AboutPageTemplate = ({ title,
               <div id="officers">
                 <div id="officers-list">
                     <Officer name="Jairo Molina" img={president} role="President" email= "molinaandres9991@gmail.com"></Officer>
-                    <Officer name="Fredi" role="Vice-President" email="fredirbase@gmail.com"></Officer>
-                    <Officer name="Adrian Koss" role="Secretary" email="adrianpkoss7@gmail.com"></Officer>
-                    <Officer name="Sho Nakajima" role="Treasurer" email="tojiro1028@live.jp"></Officer>
+                    <Officer name="Adrian Koss" role="Vice-President" email=""></Officer>
+                    <Officer name="Andrew Lavryshyn" role="Secretary" email=""></Officer>
+                    <Officer name="Edwin Carbajal" role="Treasurer" email=""></Officer>
                   </div>
                 </div>
             </div>
