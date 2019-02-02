@@ -61,6 +61,16 @@
     left: 0;
     font-weight: 900; }
 
+.events-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.events-item {
+  border: 1px solid #eaecee;
+  flex: 0 1 100%;
+  padding: 2em 4em;
+  margin-bottom: 24px; }
+
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
