@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/bmcc-programming-club",
   siteMetadata: {
     title: 'BMCC Programming Club Website',
   },
