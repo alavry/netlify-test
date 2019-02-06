@@ -5,7 +5,32 @@ import Layout from '../components/Layout'
 import video from '../vid/Hello-World.webm'
 import poster from '../img/Hello-World.jpg'
 import Helmet from 'react-helmet'
+import Modal from 'react-modal'
+
 export default class IndexPage extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  afterOpenModal() {
+  }
+
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+  
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -13,13 +38,7 @@ export default class IndexPage extends React.Component {
       <Layout>
       <Helmet title="Home"/>
         <section className="hero is-fullheight video">
-            <div className="hero-video" style={{
-              width: '100vw',
-              height: '100vh',
-              top: 0,
-              left: 0,
-              zIndex: -1,
-            }}>
+            <div className="hero-video">
               <video src={video} style={{ objectFit: 'cover', width: '100%', height: '100%'}} poster={poster} playsInline autoPlay muted loop></video>
             </div>
             <div style={{flexDirection: 'column'}} className="hero-body">
@@ -30,15 +49,38 @@ export default class IndexPage extends React.Component {
                   Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
                 </div>
                 <div>
-                  <a 
-                    style={{
-                      margin:'auto', 
-                      marginBottom:'100%'
-                    }} 
-                    className="is-white is-rounded is-info is-large button" 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfTxxUtXfvM3NwpekhjUl9FA6NNJp7-cmMZQiUCL9wc4TRPjw/viewform?usp=sf_link">
-                      Register Now
-                  </a>
+                <button className="is-white is-rounded is-info is-large button" onClick={this.openModal}>Register Now</button>
+                <Modal
+                  isOpen={this.state.modalIsOpen}
+                  onAfterOpen={this.afterOpenModal}
+                  onRequestClose={this.closeModal}
+                  style={{
+                    overlay: {
+                      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                      zIndex: 2
+                    },
+                    content: {
+                      border: '0',
+                      borderRadius: '4px',
+                      bottom: 'auto',
+                      height: '500px',  // set height
+                      left: '30vw',
+                      padding: '2rem',
+                      position: 'fixed',
+                      right: 'auto',
+                      top: '25%', // start from center
+                      width: '40%',
+                      maxWidth: '40rem'
+                    }
+                  }}
+                  contentLabel="Register"
+                >
+                  <form>
+                    <input />
+                    <button onClick={this.closeModal}>Submit</button>
+                  </form>
+                </Modal>
+
                 </div>
             </div>
         </section>
