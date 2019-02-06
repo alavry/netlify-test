@@ -26,6 +26,18 @@ $primary-invert: $kaldi-red-invert
 
 // Additions
 
+.ReactModal__Body--open 
+  overflow: hidden
+  position: fixed
+  width: 100%
+  height: 100%
+
+.hero
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+
 .hero-title
   z-index: 1
   text-shadow: 0em 0.05em 0em #000
@@ -47,6 +59,7 @@ $primary-invert: $kaldi-red-invert
   font-family: Cabin, medium
 
 .hero-video
+  z-index: -1
   @media screen and (max-width: 768px)
     display: block !important
 
