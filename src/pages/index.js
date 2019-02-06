@@ -49,7 +49,7 @@ export default class IndexPage extends React.Component {
                   Our mission at the BMCC Programming Club is to promote learning in Computer Science by creating solutions to real-world problems.
                 </div>
                 <div>
-                <button onClick={this.openModal}>Open Modal</button>
+                <button className="is-white is-rounded is-info is-large button" onClick={this.openModal}>Register Now</button>
                 <Modal
                   isOpen={this.state.modalIsOpen}
                   onAfterOpen={this.afterOpenModal}
@@ -73,14 +73,12 @@ export default class IndexPage extends React.Component {
                       maxWidth: '40rem'
                     }
                   }}
-                  contentLabel="Example Modal"
+                  contentLabel="Register"
                 >
                   <form>
                     <input />
-                    <button>Submit</button>
+                    <button onClick={this.closeModal}>Submit</button>
                   </form>
-                  <button onClick={this.closeModal}>close</button>
-
                 </Modal>
 
                 </div>
