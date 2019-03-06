@@ -2,6 +2,7 @@ module.exports = {
   pathPrefix: "/bmcc-programming-club",
   siteMetadata: {
     title: 'BMCC Programming Club Website',
+    siteUrl: `https://bmcc-programming-club.ml`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -47,6 +48,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
